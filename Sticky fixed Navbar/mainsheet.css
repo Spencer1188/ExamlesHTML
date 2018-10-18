@@ -1,0 +1,84 @@
+/* CSS Document */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .3s;
+}
+
+nav.black{
+	background: rgba(0,0,0,0.8);
+	height: 100px;
+	padding: 10px 100px;
+}
+
+nav .logo{
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+	transition: .3s;
+}
+
+nav.black logo{
+	color: #fff;
+}
+
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	line-height: 80px;
+	color:  #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+nav.black ul li a{
+	color: #fff;
+}
+nav ul li a:focus{
+	outline: none;
+}
+
+section.sec1{
+	width: 100%;
+	height: 100vh;
+	background: url("low-poly-1239778_960_720.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.content{
+	margin-top: 80px;
+}
+
+.content p{
+	width: 900px;
+	margin: 30px auto;
+	text-align: justify;
+	font-size: 20px;
+	line-height: 30px;
+}

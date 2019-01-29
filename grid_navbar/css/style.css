@@ -15,6 +15,8 @@ html,body{
 		grid-template-columns: 1fr 2fr 1fr;
 		}
 
+
+/* Navbar */
 .navbar{
 	background:#212121;
 	grid-column: 1/5;
@@ -53,6 +55,8 @@ li:hover{
 	align-items: center;
 }
 
+
+/* Header */
 header {
     /* Create grid spanning viewport width & height */
    	grid-column: 1/5;
@@ -101,6 +105,9 @@ h1 {
     color: #fff;
     text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
 }
+
+
+/* Beitrag 1*/
 .bt1{
 	grid-column: 1/5;
 	display: grid;
@@ -115,4 +122,56 @@ h1 {
 
 .img-text-right img {
 	justify-self: end;
+}
+
+
+/* Team */
+
+.team-sec{
+	grid-column: 1/5;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+}
+
+.team{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding: 10px;
+}
+
+.team1{
+	background: #B0ACAC;
+	grid-row: minmax(100px,auto);
+}
+
+.team2{
+	background:#9C9C9C;
+}
+
+.team3{
+	background:#9C9C9C;
+}
+
+.team4{
+	background: #B0ACAC;
+}
+
+.img-team{
+	align-self: center;
+	text-align: center;
+}
+
+.port-team{
+	border-radius: 60px;
+	width: 50%;
+}
+
+.zitat[cite]::after{
+	content: "« [" attr(cite) "]"; 
+}
+
+/* Newsletter */
+
+.newsletter{
+	grid-column: 1/5;
 }

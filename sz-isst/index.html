@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Basic Multilingual Calendar & Date Picker Examples</title>
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="js/jquery.calendar.js"></script>
+		<link rel="stylesheet" href="css/jquery.calendar.css" />
+		<style>
+		* {font-family: 'Open Sans';}
+		body { background-color: #fafafa; }
+		pre {font-family: Courier New;}
+		</style>
+	</head>
+	<body>
+
+</div>
+		<section style="max-width:400px;margin:150px auto;">
+			<div id="pnlEventCalendar" style="width:100%;"></div>
+			<p>selected date: <b><span id="lblEventCalendar">[date]</span></b></p>
+
+		</section>
+	</body>
+
+			<script>
+			$(function () {
+				$('#pnlEventCalendar').calendar({months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+					days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],onSelect: function (event) {
+					$('#lblEventCalendar').text(event.label);
+				}});
+			});
+			</script>
+</html>
